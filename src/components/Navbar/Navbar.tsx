@@ -10,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 10) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -33,11 +33,11 @@ const Navbar = () => {
   };
   return (
     <div
-      className={`w-full h-[10vh] ${isScrolled ? "lg:h-[10vh]" : "lg:h-[15vh]"} flex items-center justify-between lg:justify-around fixed top-0 left-0 z-50 transition-all ${
+      className={`w-full h-[10vh] ${isScrolled ? "lg:h-[10vh]" : "lg:h-[15vh]"} flex items-center justify-between lg:justify-center fixed top-0 left-0 z-50 transition-all ${
         isScrolled ? "bg-white text-black" : "bg-transparent text-white"
       }`}
     >
-      <div className="w-[80%] mx-auto flex justify-center">
+      <div className="w-[80%] mx-auto flex lg:justify-center">
         <div className="hidden lg:flex w-[40%] items-center justify-between font-semibold ">
           <Link
             className={`navItem ${!isScrolled ? "hover:text-[rgba(255,255,255,0.7)]" : "hover:text-[rgba(0,0,0,0.7)]"}`}
@@ -70,10 +70,10 @@ const Navbar = () => {
             offset={-70}
             duration={500}
           >
-            Services
+            Coffees
           </Link>
         </div>
-        <div className="w-[25vw] md:w-[22vw] lg:w-[22vw] h-full flex justify-center items-center rounded-full overflow-hidden mx-8">
+        <div className="w-[25vw] md:w-[22vw] lg:w-[22vw] h-full flex lg:justify-center lg:items-center rounded-full overflow-hidden lg:mx-8">
           <Image
             src={"/expresso.avif"}
             alt=""
@@ -92,7 +92,7 @@ const Navbar = () => {
             offset={-70}
             duration={500}
           >
-            Location
+            Discover
           </Link>
           <Link
             className={`navItem ${!isScrolled ? "hover:text-[rgba(255,255,255,0.7)]" : "hover:text-[rgba(0,0,0,0.7)]"}`}
@@ -103,7 +103,7 @@ const Navbar = () => {
             offset={-70}
             duration={500}
           >
-            Branch
+            Testimonial
           </Link>
           <Link
             className={`navItem ${!isScrolled ? "hover:text-[rgba(255,255,255,0.7)]" : "hover:text-[rgba(0,0,0,0.7)]"}`}
@@ -119,10 +119,10 @@ const Navbar = () => {
         </div>
       </div>
       <div className="w-[30vw] flex items-center justify-center lg:hidden z-50">
-        <MenuIcon onClick={handleOpenClick} fontSize="large" color="info" />
+        <MenuIcon onClick={handleOpenClick} fontSize="large" sx={{ color: isScrolled ? "#000000" : "#ffffff" }} />
         <div
           className={`w-screen h-screen fixed top-0 bg-black ${
-            !showMobileNav ? "left-[-100%]" : "left-[0%]"
+            !showMobileNav ? "left-[-120%]" : "left-[0%]"
           } transition-all`}
         >
           <div className="w-full flex flex-col gap-y-8 px-4 py-4 text-white text-[30px] italic ">
@@ -160,7 +160,7 @@ const Navbar = () => {
               offset={-70}
               duration={500}
             >
-              Services
+              Coffee
             </Link>
             <Link
               onClick={handleCloseClick}
@@ -171,7 +171,7 @@ const Navbar = () => {
               offset={-70}
               duration={500}
             >
-              Location
+              Discover
             </Link>
             <Link
               onClick={handleCloseClick}

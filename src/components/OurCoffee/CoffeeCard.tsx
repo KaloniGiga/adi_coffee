@@ -9,7 +9,7 @@ interface ICoffeeCard {
 const CoffeeCard: FunctionComponent<ICoffeeCard> = ({ title, des, image }): ReactElement => {
   return (
     <div className="group flex flex-col h-[50vh] lg:h-[75vh] pb-2 bg-transparent relative">
-      <div className="absolute w-full h-full top-0 left-0 group-hover:scale-[1.5] scale-0 transition-all">
+      <div className="absolute w-full h-full top-0 left-0 group-hover:scale-[1.2] lg:group-hover:scale-[1.5] scale-0 transition-all">
         <Image
           src={"/klipartz.com.png"}
           alt=""

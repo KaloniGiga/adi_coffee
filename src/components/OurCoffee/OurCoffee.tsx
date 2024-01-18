@@ -88,7 +88,7 @@ const OurCoffee = () => {
     >
       <div className="w-full h-full absolute inset-0 bg-[url('/bg-texture.png')] bg-cover bg-center"></div>
       <div className="w-[90%] flex flex-col mx-auto md:pl-[4%] z-40">
-        <h1 className="mt-8 text-[26px] md:text-[30px] lg:text-[30px] font-semibold text-black text-center uppercase">
+        <h1 className="mt-8 text-[22px] md:text-[24px] lg:text-[30px] font-semibold text-black text-center uppercase">
           Our Coffee
         </h1>
         {/* <div className="w-[50px] h-[4px] bg-gradient-to-r from-[#ff6300] to-[#ff9900] ml-2"></div> */}
@@ -105,10 +105,10 @@ const OurCoffee = () => {
         </swiper-container>
         {/* <div className="swiper-pagination"></div> */}
         <div className="w-[90%] absolute top-[40%] left-[5%] flex justify-between z-40">
-          <div className="swiper-button-prev w-[40px] lg:w-[65px] h-[40px] lg:h-[65px] rounded-full flex justify-center items-center bg-gradient-to-r from-[#f0f0f0] to-[#f0f0f0]">
+          <div className="swiper-button-prev w-[40px] lg:w-[65px] h-[40px] lg:h-[65px] rounded-full flex justify-center items-center bg-gradient-to-r from-[#f0f0f0] to-[#f0f0f0] p-2">
             <KeyboardBackspaceIcon sx={{ color: "#000000" }} />
           </div>
-          <div className="swiper-button-next w-[40px] lg:w-[65px] h-[40px] lg:h-[65px] rounded-full flex justify-center items-center bg-gradient-to-r from-[#f0f0f0] to-[#f0f0f0]">
+          <div className="swiper-button-next w-[40px] lg:w-[65px] h-[40px] lg:h-[65px] rounded-full flex justify-center items-center bg-gradient-to-r from-[#f0f0f0] to-[#f0f0f0] p-2">
             <EastIcon sx={{ color: "#000000" }} />
           </div>
         </div>

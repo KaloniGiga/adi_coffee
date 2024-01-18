@@ -8,11 +8,11 @@ import Image from "next/image";
 
 const ContactUs = () => {
   return (
-    <div className="w-full h-[70vh] flex flex-col justify-center items-center">
-      <div className="w-[80%] mx-auto flex">
-        <div className="w-[40%] flex flex-col h-full justify-center mb-16">
-          <h3 className="text-[40px] font-bold">Find Us In</h3>
+    <div className="w-full h-[100vh] lg:h-[80vh] flex flex-col justify-center items-center">
+      <div className="w-[80%] mx-auto flex flex-col-reverse lg:flex-row">
+        <div className="w-full lg:w-[40%] flex flex-col h-full justify-center items-center">
           <div>
+            <h3 className="text-[20px] md:text-[24px] lg:text-[30px] mb-4 mt-4 uppercase">Find Us In</h3>
             <div className="flex flex-col gap-y-4">
               {["Address: Ohio, 2389 Street", "Phone: +977 12345132", "Email: testuser@gmail.com"].map(
                 (item, index) => (
@@ -26,19 +26,19 @@ const ContactUs = () => {
                         <EmailIcon sx={{ color: "#000000" }} />
                       )}
                     </div>
-                    <p className="text-[#000000] text-[20px]">{item}</p>
+                    <p className="text-[#000000] text-[14px] md:text-[16px] lg:text-[20px]">{item}</p>
                   </div>
                 )
               )}
             </div>
-          </div>
-          <div className="flex gap-10 mt-8">
-            <InstagramIcon fontSize="large" />
-            <FacebookIcon fontSize="large" />
-            <TwitterIcon fontSize="large" />
+            <div className="flex gap-10 mt-8">
+              <InstagramIcon />
+              <FacebookIcon />
+              <TwitterIcon />
+            </div>
           </div>
         </div>
-        <div className="w-[60%]">
+        <div className="w-full lg:w-[60%]">
           <Image
             src={"/coffeecup.png"}
             alt=""
