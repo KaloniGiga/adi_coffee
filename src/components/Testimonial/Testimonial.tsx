@@ -94,7 +94,7 @@ const Testimonial = () => {
           Kind Words
         </h1>
       </div>
-      <div className="w-[80%] lg:w-[60%] mx-auto pt-4 pb-2 lg:pt-8 md:pb-4 lg:pb-16 lg:px-8 relative">
+      <div className="w-[80%] md:w-[70%] lg:w-[60%] mx-auto pt-4 pb-2 lg:pt-8 md:pb-4 lg:pb-16 lg:px-8 relative">
         <swiper-container ref={swiperRef} init={false}>
           {portfolioData.map((item, index) => {
             return (

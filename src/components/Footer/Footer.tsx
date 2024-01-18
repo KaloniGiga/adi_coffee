@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="w-full h-full pt-6 lg:pt-8 flex flex-col bg-[#F5F4F2]">
-      <div className="w-[30%] lg:w-[20%]  ml-2 lg:mx-auto bg-transparent mb-4">
+      <div className="w-[30%] md:w-[20%]  ml-2 md:mx-auto bg-transparent mb-4">
         <Image
           alt=""
           src={"/expresso.avif"}
@@ -13,7 +13,7 @@ const Footer = () => {
         />
       </div>
 
-      <div className="pl-2 lg:pl-0 w-full lg:w-[80%] mx-auto flex flex-col lg:flex-row justify-around bg-transparent gap-y-4 lg:gap-y-0">
+      <div className="pl-2 lg:pl-0 w-full md:w-[90%] lg:w-[80%] mx-auto flex flex-col md:flex-row justify-around bg-transparent gap-y-4 lg:gap-y-0">
         <div className="w-full lg:w-[25%] text-[14px] lg:text-[16px] uppercase text-[rgba(0,0,0,0.7)] flex flex-col gap-y-2 lg:gap-y-4">
           <h3 className="text-[14px] lg:text-[18px] font-bold text-black">About us</h3>
           <h3>Beans</h3>

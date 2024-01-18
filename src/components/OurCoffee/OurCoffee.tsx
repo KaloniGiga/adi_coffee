@@ -64,8 +64,11 @@ const OurCoffee = () => {
         0: {
           slidesPerView: 1,
         },
-        640: {
+        500: {
           slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
         },
         1268: {
           slidesPerView: 4,

@@ -9,8 +9,8 @@ import Image from "next/image";
 const ContactUs = () => {
   return (
     <div className="w-full h-[100vh] lg:h-[80vh] flex flex-col justify-center items-center">
-      <div className="w-[80%] mx-auto flex flex-col-reverse lg:flex-row">
-        <div className="w-full lg:w-[40%] flex flex-col h-full justify-center items-center">
+      <div className="w-[80%] md:w-[90%] lg:w-[80%] mx-auto flex flex-col-reverse md:flex-row">
+        <div className="w-full md:w-[40%] flex flex-col h-full justify-center items-center">
           <div>
             <h3 className="text-[20px] md:text-[24px] lg:text-[30px] mb-4 mt-4 uppercase">Find Us In</h3>
             <div className="flex flex-col gap-y-4">
@@ -38,7 +38,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-[60%]">
+        <div className="w-full md:w-[60%] h-[50%] md:h-full">
           <Image
             src={"/coffeecup.png"}
             alt=""
